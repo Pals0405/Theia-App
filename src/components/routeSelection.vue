@@ -1,0 +1,45 @@
+<template>
+    <div class="container-fluid">
+        <topBar/>
+        <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+          <p class="chat_dest text-left"> You have chosen Sloan Hall Room 101 as your destination </p>
+          <p class="chat_dest text-left"> Would you like to proceed? </p>
+        </div>
+        </div>  
+        <div class="col-6"><p class="user_chat_dest text-left"> Yes! </p></div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9">
+            <p class="chat_dest text-left"> Finding routes...<br>2 routes detected </p>
+            <p class="chat_dest text-left"> Route A is your saved preference and has ETA of 2 minutes, Route B has ETA of 5 minutes.</p> 
+            <p class="chat_dest text-left"> Make a route selection</p>
+        </div>
+        </div>
+        <bottomBar/>
+    </div>    
+</template>
+
+<script>
+import topBar from './topBar'
+import bottomBar from './bottomBar.vue'
+import './style.css'
+export default {
+  name: 'routeSelection',
+  components:{
+    topBar:topBar,
+    bottomBar:bottomBar
+  },
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+   navigateRoute(){
+   
+      }
+  }
+}
+</script>

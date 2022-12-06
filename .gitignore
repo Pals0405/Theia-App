@@ -12,3 +12,9 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+/.vs/slnx.sqlite
+/.vs/Theia-App/v16
+/platforms/android
+/www/static/js
+/www/static/css
+/.vs

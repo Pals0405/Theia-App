@@ -3,6 +3,8 @@ import Router from 'vue-router'
 //import HelloWorld from '@/components/HelloWorld'
 import login from '@/components/login'
 import dest from '@/components/dest'
+import routeSelection from '@/components/routeSelection'
+import navigate from '@/components/navigate'
 Vue.use(Router)
 
 export default new Router({
@@ -16,7 +18,16 @@ export default new Router({
       path: '/dest',
       name: 'dest',
       component: dest
+    },
+    {
+      path: '/routeSelection',
+      name: 'routeSelection',
+      component: routeSelection
+    },
+    {
+      path: '/navigate',
+      name: 'navigate',
+      component: navigate
     }
-
   ]
 })
