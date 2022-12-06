@@ -11,6 +11,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.10.2",
+    "bootstrap-icons-vue": "^1.8.1",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
