@@ -4,14 +4,14 @@
     <div class="row">
         <div class="col-3"></div>
         <div class="col-9">
-          <p class="chat_dest text-left"> Welcome to Theia, Jane !! </p>
+          <p class="chat_dest text-left"> Welcome to Theia, Jane!! </p>
           <p class="chat_dest text-left"> Where are you headed today? </p>
         </div>
     </div>
     <div class="row">
       <div class="col-2"></div>
       <div class="col-5">
-        <button type="button" class="btn btn-outline-dark locationCard">Sloan Hall 101</button>
+        <button type="button" class="btn btn-outline-dark locationCard" @click="goToDest()">Sloan Hall 101</button>
       </div>
       <div class="col-5">
         <button type="button" class="btn btn-outline-dark locationCard">Sloan Hall 201</button>
@@ -44,6 +44,7 @@
 <script>
 import topBar from './topBar'
 import bottomBar from './bottomBar.vue'
+import './style.css'
 export default {
   name: 'dest',
   components:{
@@ -57,23 +58,8 @@ export default {
   },
   methods:{
    goToDest(){
-   this.$router.push('/dest'); 
+   this.$router.push('/routeSelection');
       }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.chat_dest{
-  font-size: 20;
-  border-radius: 10px;
-  background-color: #e9ecef;
-  color: black;
-  padding: 5 5 10 10;
-}
-.locationCard{
-  background-color: #e9ecef !important;
-  font-size: 20;
-}
-</style>
