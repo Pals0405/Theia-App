@@ -19,3 +19,10 @@
     background-color: #e9ecef !important;
     font-size: 20;
   }
+  .chat-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 550px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+  }
