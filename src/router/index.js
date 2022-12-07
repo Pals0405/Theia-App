@@ -3,6 +3,7 @@ import Router from 'vue-router'
 //import HelloWorld from '@/components/HelloWorld'
 import login from '@/components/login'
 import dest from '@/components/dest'
+import settings from'@/components/settings'
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +17,11 @@ export default new Router({
       path: '/dest',
       name: 'dest',
       component: dest
+    },
+    {
+    path: '/settings',
+          name: 'settings',
+          component: settings
     }
 
   ]

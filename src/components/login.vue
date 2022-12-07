@@ -6,15 +6,16 @@
         <div>
             <h1 id="theia_sentence" class="text-center"> Your guide through navigation </h1>
         </div>
+
          <div>
             <h1 id="login_sentence" class="text-center"> Login to continue </h1>
         </div>
         <div class="row" id="fingerprint_line">
           <div class="col-4"> </div>
-          <div class="col-4"> 
+          <div class="col-4">
              <a @click="goToDest()"><i class="bi bi-fingerprint center" style="font-size: 6rem;"></i></a>
           </div>
-          <div class="col-4"> 
+          <div class="col-4">
           </div>
         </div>
         <div class="row">
@@ -25,7 +26,7 @@
           <div class="col-3">
            <i class="bi bi-chat" style="font-size: 3rem;"></i>
           </div>
-        </div>   
+        </div>
     </div>
 </template>
 
@@ -39,7 +40,7 @@ export default {
   },
   methods:{
    goToDest(){
-   this.$router.push('/dest'); 
+   this.$router.push('/dest');
       }
   }
 }
