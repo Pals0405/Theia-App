@@ -1,67 +1,135 @@
 <template>
-    <div class="container-fluid">
-        <topBar/>
+    <div>
+        <topBar />
         <div class="chat-container">
-            <div class="row">
-        <div class="col-3"></div>
-        <div class="col-9">
-          <p class="chat_dest text-left"> You have chosen Sloan Hall Room 101 as your destination </p>
-          <p class="chat_dest text-left"> Would you like to proceed? </p>
+            <section class="chat">
+                    <div class="chat__inner">
+                        <div class="chat__message chat__message_B" style="--delay: 1s;">
+                        <div class="chat__content">
+                            <p> You have chosen Sloan Hall Room 101 as your destination </p>
+                        </div>                        
+                    </div>                    
+                    <div class="chat__message chat__message_B" style="--delay: 3s;">
+                        <div class="chat__content">                            
+                            <p> Would you like to proceed? </p>
+                        </div>
+                    </div>
+                    <div class="chat__message chat__message_A" style="--delay: 6s;">
+                        <div class="chat__content">
+                            <p> Yes! </p>
+                        </div>                        
+                    </div>
+                <div class="chat__message chat__message_B" style="--delay: 8s;">
+                    <div class="chat__content">
+                        <p> Finding possible routes... </p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 12s;">
+                    <div class="chat__content">
+                        <p>routes detected </p>
+                    </div>           
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 15s;">
+                    <div class="chat__content">
+                        <p> Route A is your saved preference and has an ETA of 2 minutes</p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 17s;">
+                    <div class="chat__content">
+                        <p>Route B has an ETA of 5 minutes.</p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 19s;">
+                    <div class="chat__content">
+                        <p> Please make a route selection</p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_A" style="--delay: 22s;">
+                    <div class="chat__content">
+                        <p > Route A </p>
+                    </div>
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 24s;">
+                    <div class="chat__content">
+                        <p> Alright!</p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 27s;">
+                    <div class="chat__content">
+                        <p>Navigating to your destination via Route A </p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 30s;">
+                    <div class="chat__content">
+                        <p>Keep walking straight. There is a right turn in approximately 20 feet</p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 35s;">
+                    <div class="chat__content">
+                        <p> Slow down, be prepared to take the right turn in 5.., 4.., 3.., 2.., and 1 </p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_A" style="--delay: 40s;">
+                    <div class="chat__content">
+                        <p> Alright! </p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 43s;">
+                    <div class="chat__content">
+                        <p> Make a right turn now</p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 46s;">
+                    <div class="chat__content">
+                        <p>You are now approaching your destination</p>
+                    </div>                    
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 49s;">
+                    <div class="chat__content">
+                        <p> Slow down to a halt in 3.</p>
+                    </div>
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 51s;">
+                    <div class="chat__content">
+                        <p> 2</p>
+                    </div>
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 53s;">
+                    <div class="chat__content">
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="chat__message chat__message_B" style="--delay: 55s;">
+                    <div class="chat__content">
+                        <p>You have now reached Sloan Hall Room 101. </p>
+                    </div>
+                </div>
+                    </div>            
+            </section>
         </div>
-        </div>  
-        <div class="col-6"><p class="user_chat_dest text-left"> Yes! </p></div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-9">
-            <p class="chat_dest text-left"> Finding routes...<br>2 routes detected </p>
-            <p class="chat_dest text-left"> Route A is your saved preference and has ETA of 2 minutes, Route B has ETA of 5 minutes.</p> 
-            <p class="chat_dest text-left"> Make a route selection</p>
-        </div>
-        </div>
-        <div>
-            <div class="col-6"><p class="user_chat_dest text-left"> Route A </p></div>
-            <div class="row">
-        <div class="col-3"></div>
-        <div class="col-9">
-          <p class="chat_dest text-left"> Alright!<br>Navigating to your destination via Route A </p>
-          <p class="chat_dest text-left">Keep walking straight. There is a right turn in approximately 20 feet</p>
-          <p class="chat_dest text-left"> Slow down, be prepared to take the right turn in 10, 9, 8, 7, 6, 5, 4, 3, 2, and 1 </p>
-        </div>
-        </div>
-        <div class="col-6"><p class="user_chat_dest text-left">Alright! </p></div>
-        <div class="row">
-            <div class="col-3"></div>
-        <div class="col-9">
-          <p class="chat_dest text-left"> Make a right turn now</p>
-          <p class="chat_dest text-left">You are now approaching your destination</p>
-          <p class="chat_dest text-left"> Slow down, you have now reached Sloan Hall Room 101. </p>
-        </div>
-        </div>
-        </div>
-        </div>        
-        <bottomBar/>
-    </div>    
+        <bottomBar />
+    </div>
 </template>
 
 <script>
 import topBar from './topBar'
 import bottomBar from './bottomBar.vue'
-import './style.css'
+import './animationstyle.css'
 export default {
-  name: 'routeSelection',
-  components:{
-    topBar:topBar,
-    bottomBar:bottomBar
-  },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+    name: 'routeSelection',
+    components: {
+        topBar: topBar,
+        bottomBar: bottomBar
+    },
+    data() {
+        return {
+            msg: 'Welcome to Your Vue.js App'
+        }
+    },
+    methods: {
+        navigateRoute() {
+
+        }
     }
-  },
-  methods:{
-   navigateRoute(){
-   
-      }
-  }
 }
 </script>

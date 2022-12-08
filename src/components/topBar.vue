@@ -6,7 +6,7 @@
         <div class="col-6">
         </div>
         <div class="col-3" id="settingsIcon">
-           <a> <i class="bi bi-gear" style="font-size: 2.5rem;"></i> </a>
+           <a @click="goToSettings()"> <i class="bi bi-gear" style="font-size: 2.5rem;"></i> </a>
         </div>
     </div>
 </template>
@@ -14,6 +14,11 @@
 <script>
 export default {
   name: 'topBar',
+  methods:{
+   goToSettings(){
+   this.$router.push('/settings');
+      }
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
