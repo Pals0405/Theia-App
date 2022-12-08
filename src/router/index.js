@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-//import HelloWorld from '@/components/HelloWorld'
 import login from '@/components/login'
 import dest from '@/components/dest'
 import settings from'@/components/settings'
+import routeSelection from '@/components/routeSelection'
+
 Vue.use(Router)
 
 export default new Router({
@@ -19,10 +20,14 @@ export default new Router({
       component: dest
     },
     {
-    path: '/settings',
-          name: 'settings',
-          component: settings
+      path: '/settings',
+      name: 'settings',
+      component: settings
+    },
+    {
+      path: '/routeSelection',
+      name: 'routeSelection',
+      component: routeSelection
     }
-
   ]
 })

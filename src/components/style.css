@@ -1,0 +1,28 @@
+.chat_dest{
+    font-size: 20;
+    border-radius: 10px;
+    background-color: #87c7f8;
+    color: black;
+    padding: 5 5 10 10;
+  }
+  .user_chat_dest{
+    font-size: 20;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    color: black;
+    padding: 5 5 10 10;    
+  }
+  .user_chat{
+    display: flexbox;
+  }
+  .locationCard{
+    background-color: #e9ecef !important;
+    font-size: 20;
+  }
+  .chat-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 550px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+  }

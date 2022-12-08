@@ -18,7 +18,7 @@
           <div class="col-4">
           </div>
         </div>
-        <div class="row">
+        <div class="row fixed-bottom">
           <div class="col-3">
            <i class="bi bi-mic" style="font-size: 3rem;"></i>
           </div>
