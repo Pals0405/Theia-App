@@ -26,3 +26,33 @@
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: scroll; /* Add vertical scrollbar */
   }
+  #settings_heading {
+    font-weight: normal;
+    font-family: 'Snell Roundhand';
+    font-size: 40;
+    padding-bottom: 20;
+    padding-top: 10;
+    text-align: left;
+  }
+  
+  #settings_sentence {
+    font-size: 20;
+    padding-bottom: 10;
+    font-family: 'Comic Sans MS';
+  
+  }
+  
+  #language {
+    font-size: 12;
+    padding-bottom: 2;
+    font-family: 'Comic Sans MS';
+  }
+  
+  #fingerprint_line {
+    padding-bottom: 100;
+  }
+
+  .settings_section{
+    border: 1px #87c7f8 dashed;
+    padding: 20px;
+  }
