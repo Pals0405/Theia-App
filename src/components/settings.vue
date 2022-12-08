@@ -43,7 +43,7 @@
              </div>
        <br/>
    <div>
-        <label for="emergency"> Emergency Level 3- Call 911 Emergency:</label>
+        <label for="emergency"> Emergency Level 3- 911 Emergency:</label>
              <button type="button">Tap to call</button>
 
 
@@ -62,7 +62,11 @@
 
 
         </div>
+       <br/>
 
+<div>
+  <button type="button">Save changes</button>
+</div>
 
 
      <bottomBar/>
@@ -103,7 +107,7 @@ text-align: left;
 }
 #settings_sentence{
 font-size: 20;
-padding-bottom: 30;
+padding-bottom: 10;
 font-family: 'Comic Sans MS';
 
 }
