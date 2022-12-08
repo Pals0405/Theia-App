@@ -4,6 +4,7 @@ import login from '@/components/login'
 import dest from '@/components/dest'
 import settings from'@/components/settings'
 import routeSelection from '@/components/routeSelection'
+import emergency from '@/components/emergency'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/routeSelection',
       name: 'routeSelection',
       component: routeSelection
+    },
+    {
+      path: '/emergency',
+      name: 'emergency',
+      component: emergency
     }
   ]
 })

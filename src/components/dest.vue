@@ -24,7 +24,7 @@
         <button type="button" class="btn btn-outline-dark locationCard">Sloan Hall 301</button>
       </div>
       <div class="col-5">
-        <button type="button" class="btn btn-outline-dark locationCard">Dana Hall 201</button>
+        <button type="button" class="btn btn-outline-dark locationCard" @click="gotoEmergency()">Dana Hall 201 </button>
       </div>
     </div>
     <br>
@@ -59,7 +59,10 @@ export default {
   methods:{
    goToDest(){
    this.$router.push('/routeSelection');
-      }
+      },
+    gotoEmergency(){
+      this.$router.push('/emergency')
+    }
   }
 }
 </script>
