@@ -45,9 +45,6 @@
    <div>
         <label for="emergency"> Emergency Level 3- 911 Emergency:</label>
              <button type="button">Tap to call</button>
-
-
-
     </div>
     <br/>
    <div>
@@ -57,18 +54,12 @@
                              <option value="level5"> Less number of turns</option>
                              <option value="level6">Less number of obstacles</option>
                              <option value="level7"> ETA</option>
-                             </select>
-
-
-
-        </div>
-       <br/>
-
+                             </select>                                                                 
+                            </div>
+       <br/>       
 <div>
   <button type="button">Save changes</button>
 </div>
-
-
      <bottomBar/>
   </div>
   </template>
