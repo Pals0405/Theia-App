@@ -5,6 +5,8 @@ import login from '@/components/login'
 import dest from '@/components/dest'
 import routeSelection from '@/components/routeSelection'
 import navigate from '@/components/navigate'
+import emergency from '@/components/emergency'
+
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +30,11 @@ export default new Router({
       path: '/navigate',
       name: 'navigate',
       component: navigate
+    },
+    {
+      path: '/emergency',
+      name: 'emergency',
+      component: emergency
     }
   ]
 })
