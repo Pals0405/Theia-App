@@ -1,7 +1,7 @@
 <template>
     <div class="row sticky-top" id="topBarStyle">
         <div class="col-3">
-            <h1 id="theia_topbar"> Theia</h1>
+           <a @click="goToHome()"> <h1 id="theia_topbar"> Theia</h1> </a>
         </div>
         <div class="col-6">
         </div>
@@ -17,6 +17,9 @@ export default {
   methods:{
    goToSettings(){
    this.$router.push('/settings');
+      },
+    goToHome(){
+   this.$router.push('/dest');
       }
   },
   data () {
