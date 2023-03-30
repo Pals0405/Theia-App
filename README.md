@@ -1,3 +1,5 @@
+This repository contains the code for the project Theia. It is a prototype version of android and iOS based mobile application developed using VueJS and Cordova to support navigation within campus for blind and visually challenged individuals. 
+
 cordo# mobile-app
 
 > A Vue.js project
